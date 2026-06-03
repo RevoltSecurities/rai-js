@@ -2,7 +2,7 @@
   "name": "@revoltsecurities/rai-js",
   "version": "1.0.0",
   "description": "TypeScript SDK for the RAI HTTP server — core client + React hook",
-  "author": "RevoltSecurities",
+  "author": "th3sanjai",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -32,6 +32,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "prepare": "tsc",
     "dev": "tsc --watch",
     "typecheck": "tsc --noEmit"
   },
