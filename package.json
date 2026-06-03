@@ -1,0 +1,66 @@
+{
+  "name": "@revolt-rai/js",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for the RAI HTTP server — core client + React hook",
+  "author": "RevoltSecurities",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./react": {
+      "import": "./dist/useRAIStream.js",
+      "types": "./dist/useRAIStream.d.ts"
+    },
+    "./client": {
+      "import": "./dist/client.js",
+      "types": "./dist/client.d.ts"
+    },
+    "./events": {
+      "import": "./dist/events.js",
+      "types": "./dist/events.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "react": "^18.3.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "rai",
+    "revolt-rai",
+    "ai",
+    "security",
+    "agent",
+    "streaming",
+    "sse",
+    "react",
+    "hook"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RevoltSecurities/rai-js"
+  }
+}
